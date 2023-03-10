@@ -15,6 +15,8 @@ body {
   align-items: center;
   justify-content: space-around;
 }
+
+/*********LOGIN & REGISTER PAGE********/
 .register,
 .login {
   height: 100%;
@@ -184,4 +186,318 @@ body {
   background-color: #ffffff;
   border: 1px solid #6251dd;
   color: #6251dd;
+}
+
+/******HOME PAGE******/
+.home {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.header {
+  width: 90%;
+  height: 10.5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-box-shadow: 0px 10px 13px -10px rgba(9, 9, 55, 0.02);
+  -moz-box-shadow: 0px 10px 13px -10px rgba(9, 9, 55, 0.02);
+  box-shadow: 0px 10px 13px -10px rgba(9, 9, 55, 0.02);
+}
+
+.header-logo > img {
+  height: 40px;
+}
+
+.header-searchbar {
+  width: 50%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgba(244, 244, 255, 1);
+  border-radius: 4px;
+}
+.header-searchbar-elements {
+  padding-left: 20px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.header-searchbar-elements > img {
+  color: rgba(9, 9, 55, 0.4);
+  width: 17px;
+}
+.header-searchbar-elements > label {
+  color: rgba(9, 9, 55, 0.4);
+  font-size: 20px;
+  font-weight: 400;
+}
+.header-icons {
+  height: 50px;
+  width: 182px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-icons > div {
+  height: 50px;
+  width: 50px;
+  background-color: rgba(244, 244, 255, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+  gap: 4px;
+}
+
+/*************Carousel**********/
+.homeContent {
+  width: 90%;
+  height: 50%;
+}
+.homeContentCarousel {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 8px;
+  object-fit: contain;
+}
+.homeContentCarousel > label {
+  padding-left: 20px;
+  font-size: 56px;
+  font-weight: 600;
+  white-space: pre-wrap;
+  text-align: left;
+  color: #ffffff;
+}
+.homeContentCarousel > label::first-line {
+  color: rgba(240, 184, 97, 1);
+  font-weight: 800;
+}
+.spanContainer {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.spanContainerInner {
+  height: 100%;
+  width: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.spanContainerInner > span {
+  width: 15px;
+  height: 15px;
+  background-color: rgba(9, 9, 55, 0.6);
+  color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/*BOOKLIST*/
+.homeContentBookList {
+  width: 90%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.home-content-booklist-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home-content-booklist-title > label:first-child {
+  color: rgba(9, 9, 55, 1);
+  font-size: 32px;
+  font-weight: 700;
+}
+.home-content-booklist-title > label:last-child {
+  color: rgba(239, 107, 74, 1);
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.home-content-booklist {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home-content-booklist-inner {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgba(244, 244, 255, 1);
+  justify-content: space-between;
+  border: 1px solid rgba(9, 9, 55, 0.1);
+  border-radius: 4px;
+}
+.booklist-text {
+  width: 60%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.booklist-text-writer {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.booklist-text-writer > label {
+  text-align: left;
+  width: 90%;
+}
+.booklist-text-writer > label:first-child {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(9, 9, 55, 1);
+}
+.booklist-text-writer > label:last-child {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(9, 9, 55, 0.6);
+}
+.booklist-img {
+  height: 100%;
+  padding-top: 10px;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.booklist-text-price {
+  width: 95%;
+  color: rgba(98, 81, 221, 1);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/****************BOOK DETAILS****************/
+.book-details {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.book-details-content {
+  width: 90%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.book-details-title-container {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 20px;
+  gap: 15px;
+}
+.book-details-title-container > label {
+  font-size: 24px;
+  font-weight: 700;
+}
+.book-details-details {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.book-details-image {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(244, 244, 255, 1);
+}
+.book-details-image > img {
+  width: auto;
+  height: auto;
+}
+
+.book-details-right {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.book-details-right-title {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.book-details-right-title > label {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 32px;
+  font-weight: 600;
+}
+.book-details-writer > .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(244, 244, 255, 1);
+  border-radius: 50%;
+}
+.book-details-writer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.book-details-writer > label {
+  font-size: 40px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1);
+}
+.book-details-right-summary {
+  width: 95%;
+}
+.book-details-right-summary > label {
+  color: rgba(9, 9, 55, 1);
+  font-size: 24px;
+  font-weight: 700;
+}
+.book-details-right-summary > p {
+  color: rgba(9, 9, 55, 0.6);
+  font-size: 20px;
+  font-weight: 600;
 }
