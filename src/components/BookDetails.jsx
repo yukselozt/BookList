@@ -1,13 +1,21 @@
 import React from "react";
 import Header from "./Header";
+import { useNavigate, useLocation } from "react-router-dom";
 
 export default function BookDetails() {
+  const location = useLocation();
+  const Navigate = useNavigate();
+  var book = location.state.book;
   return (
     <div className="book-details">
       <Header />
       <div className="book-details-content">
         <div className="book-details-title-container">
-          <img alt="" src="Vector.png" />
+          <img
+            onClick={() => Navigate("/bestseller")}
+            alt=""
+            src="Vector.png"
+          />
           <label>Book Details</label>
         </div>
         <div className="book-details-details">
@@ -17,38 +25,23 @@ export default function BookDetails() {
           <div className="book-details-right">
             <div className="book-details-right-title">
               <div className="book-details-writer">
-                <label>Dune</label>
+                <label>{book.name}</label>
                 <div className="img">
                   <img alt="" src="heart-button.png" />
                 </div>
               </div>
-              <label>Frank Herbert</label>
+              <label>{book.writer}</label>
             </div>
             <div className="book-details-right-summary">
               <label>Summary</label>
-              <p>
-                Dune is set in the distant future amidst a feudal interstellar
-                society in which various noble houses control planetary fiefs.
-                It tells the story of young Paul Atreides, whose family accepts
-                the stewardship of the planet Arrakis. While the planet is an
-                inhospitable and sparsely populated desert wasteland, it is the
-                only source of melange, or 'spice', a drug that extends life and
-                enhances mental abilities. Melange is also necessary for space
-                navigation, which requires a kind of multidimensional awareness
-                and foresight that only the drug provides. As melange can only
-                be produced on Arrakis, control of the planet is a coveted and
-                dangerous undertaking. The story explores the multilayered
-                interactions of politics, religion, ecology, technology, and
-                human emotion, as the factions of the empire confront each other
-                in a struggle for the control of Arrakis and its spice.
-              </p>
+              <p>{book.summary} </p>
             </div>
           </div>
         </div>
       </div>
       <div className="book-details-price">
         <div className="price-container">
-          <label>87.75 $</label>
+          <label>{book.price}</label>
           <label>Buy Now</label>
         </div>
       </div>

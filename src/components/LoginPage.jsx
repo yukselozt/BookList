@@ -1,7 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function LoginPage() {
-  const handleClick = () => {};
+  const Navigate = useNavigate();
   return (
     <div className="login">
       <div className="login-left">
@@ -32,10 +33,10 @@ export default function LoginPage() {
           </div>
         </div>
         <div className="login-right-down">
-          <button onClick={() => handleClick()}>
+          <button onClick={() => Navigate("/home")}>
             <label>Login</label>
           </button>
-          <button>
+          <button onClick={() => Navigate("/register")}>
             <label>Register</label>
           </button>
         </div>

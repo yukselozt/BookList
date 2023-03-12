@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function RegisterPage() {
+  const Navigate = useNavigate();
   return (
     <div className="register">
       <div className="register-left">
@@ -31,11 +33,11 @@ export default function RegisterPage() {
           </div>
         </div>
         <div className="register-right-down">
-          <button>
+          <button onClick={() => Navigate("/home")}>
             <label>Register</label>
           </button>
           <button>
-            <label>Login</label>
+            <label onClick={() => Navigate("/")}>Login</label>
           </button>
         </div>
       </div>

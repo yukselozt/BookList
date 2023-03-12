@@ -175,6 +175,11 @@ body {
   border-radius: 5px;
   font-size: 24px;
   font-weight: 600;
+  cursor: pointer;
+}
+.register-right-down > button > label,
+.login-right-down > button > label {
+  cursor: pointer;
 }
 .register-right-down > button:first-child,
 .login-right-down > button:first-child {
@@ -222,8 +227,11 @@ body {
   .login-input-password > input {
     height: 40px;
   }
+  .login-right-down > button > label {
+    font-size: 20px;
+  }
 }
-@media screen and (max-height: 850px) {
+@media screen and (max-height: 750px) {
   .login-left,
   .register-left {
     display: none;
@@ -257,18 +265,11 @@ body {
   .login-input-password > input {
     height: 40px;
   }
+  .login-right-down > button > label {
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 900px) {
-  .login-left,
-  .register-left {
-    display: none;
-  }
-  .login-right,
-  .register-right {
-    width: 100%;
-  }
-}
-@media screen and (max-height: 920px) {
   .login-left,
   .register-left {
     display: none;
@@ -478,12 +479,40 @@ body {
   align-items: center;
   justify-content: center;
 }
+.booklist-img > img {
+  height: 100%;
+}
 
 .booklist-text-price {
   width: 95%;
   color: rgba(98, 81, 221, 1);
   font-size: 24px;
   font-weight: 700;
+}
+@media screen and (max-width: 1320px) {
+  .booklist-text-price {
+    font-size: 20px;
+  }
+  .home-content-booklist-inner {
+    width: 24%;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .booklist-text {
+    display: none;
+  }
+  .booklist-img {
+    width: 100%;
+  }
+  .homeContentCarousel > label {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .booklist-img > img {
+    width: 70%;
+    height: 70%;
+  }
 }
 
 /****************BOOK DETAILS****************/
@@ -516,6 +545,9 @@ body {
 .book-details-title-container > label {
   font-size: 24px;
   font-weight: 700;
+}
+.book-details-title-container > img {
+  cursor: pointer;
 }
 .book-details-details {
   width: 100%;
@@ -623,6 +655,55 @@ body {
   font-size: 20px;
   font-weight: 600;
 }
+@media screen and (max-width: 1200px) {
+  .book-details-image > img {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .book-details-writer > label {
+    font-size: 24px;
+  }
+  .book-details-right-title > label {
+    font-size: 20px;
+  }
+  .book-details-right-summary > label {
+    font-size: 20px;
+  }
+  .book-details-right-summary > p {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .book-details-writer > label {
+    font-size: 22px;
+  }
+  .book-details-right-title > label {
+    font-size: 18px;
+  }
+  .book-details-right-summary > label {
+    font-size: 18px;
+  }
+  .book-details-right-summary > p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .price-container > label:first-child,
+  .price-container > label:last-child {
+    font-size: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .price-container {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 580px) {
+  .price-container {
+    width: 45%;
+  }
+}
 
 /*******************BESTSELLER PAGE*****************/
 .bestseller-container {
@@ -649,6 +730,9 @@ body {
   justify-content: flex-start;
   gap: 25px;
   padding-left: 15px;
+}
+.bestseller-title > img {
+  cursor: pointer;
 }
 .bestseller-title > label {
   font-size: 24px;
