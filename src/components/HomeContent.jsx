@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 
 export default function HomeContent() {
-  const imageURL = ["homecontent.png", "homecontent.png", "homecontent.png"];
+  //const imageURL = ["homecontent.png", "homecontent.png", "homecontent.png"];
+  const imageURL = ["red", "blue", "pink"];
 
   const label = "25% discount  \nall Paulo Coelho\nbooks!";
 
   const [carouselImage, setCarouselImage] = useState(0);
 
   const carouselStyle = {
-    background: `url(${imageURL[carouselImage]}) center no-repeat`,
+    backgroundColor: `${imageURL[carouselImage]}`,
+    // background: `url(${imageURL[carouselImage]}) center no-repeat`,
   };
   return (
     <div className="homeContent">

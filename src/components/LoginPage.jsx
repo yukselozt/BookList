@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function LoginPage() {
+  const handleClick = () => {};
   return (
     <div className="login">
       <div className="login-left">
@@ -31,7 +32,7 @@ export default function LoginPage() {
           </div>
         </div>
         <div className="login-right-down">
-          <button>
+          <button onClick={() => handleClick()}>
             <label>Login</label>
           </button>
           <button>

@@ -3,6 +3,7 @@ import LoginPage from "./components/LoginPage";
 import RegisterPage from "./components/RegisterPage";
 import HomePage from "./components/HomePage";
 import BookDetails from "./components/BookDetails";
+import BestSeller from "./components/BestSeller";
 import "./styles/styles.css";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Route path="/home" element={<HomePage />} />
       <Route path="/book-details" element={<BookDetails />} />
       <Route path="/register" element={<RegisterPage />} />
+      <Route path="/bestseller" element={<BestSeller />} />
     </Routes>
   );
 }

@@ -27,7 +27,7 @@ export default function BookDetails() {
             <div className="book-details-right-summary">
               <label>Summary</label>
               <p>
-                "Dune is set in the distant future amidst a feudal interstellar
+                Dune is set in the distant future amidst a feudal interstellar
                 society in which various noble houses control planetary fiefs.
                 It tells the story of young Paul Atreides, whose family accepts
                 the stewardship of the planet Arrakis. While the planet is an
@@ -40,10 +40,16 @@ export default function BookDetails() {
                 dangerous undertaking. The story explores the multilayered
                 interactions of politics, religion, ecology, technology, and
                 human emotion, as the factions of the empire confront each other
-                in a struggle for the control of Arrakis and its spice."
+                in a struggle for the control of Arrakis and its spice.
               </p>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="book-details-price">
+        <div className="price-container">
+          <label>87.75 $</label>
+          <label>Buy Now</label>
         </div>
       </div>
     </div>
